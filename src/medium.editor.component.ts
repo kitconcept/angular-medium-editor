@@ -20,7 +20,6 @@ import * as MediumEditor from 'medium-editor';
     selector: 'meditor-editable',
     template: `<textarea #host></textarea>`
 })
-
 export class MediumEditorComponent {
 
     @Input() config;
