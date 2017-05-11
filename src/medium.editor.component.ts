@@ -14,10 +14,10 @@ import * as MediumEditor from 'medium-editor';
 /**
  * MediumEditor component
  * Usage :
- * <textarea [(ngModel)]="data" [config]="{...}" configFile="file.js"></textarea>
+ * <medium-editor ngModel name="content" class="editable" #content="ngModel"></medium-editor>
  */
 @Component({
-    selector: 'meditor-editable',
+    selector: 'medium-editor',
     template: `<textarea #host></textarea>`
 })
 export class MediumEditorComponent {

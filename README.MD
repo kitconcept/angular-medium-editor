@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'angular-medium-editor-component';
+import { MediumEditorModule } from 'angular-medium-editor-component';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from 'angular-medium-editor-component';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    MediumEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -50,7 +50,8 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+ <medium-editor ngModel name="content" class="editable" #content="ngModel"></medium-editor>
+
 ```
 
 ## Development
