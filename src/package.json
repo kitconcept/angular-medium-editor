@@ -1,0 +1,31 @@
+{
+  "name": "angular-medium-editor-component",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kitconcept/angular-medium-editor-component"
+  },
+  "author": {
+    "name": "Victor Fernandez de Alba",
+    "email": "sneridagh@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kitconcept/angular-medium-editor-component/issues"
+  },
+  "module": "angular-medium-editor-component.js",
+  "typings": "angular-medium-editor-component.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@types/medium-editor": "^5.0.1",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "dependencies": {
+    "medium-editor": "^5.23.0"
+  }
+}
