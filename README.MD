@@ -1,4 +1,4 @@
-![kitconcept GmbH](https://kitconcept.com/logo.png)
+![kitconcept GmbH](https://kitconcept.de/logo.png)
 
 # angular-medium-editor-component
 
