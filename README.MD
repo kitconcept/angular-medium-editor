@@ -1,3 +1,5 @@
+![alt text](https://kitconcept.com/logo.png)
+
 # angular-medium-editor-component
 
 ## Installation
@@ -70,4 +72,4 @@ $ npm run lint
 
 ## License
 
-MIT © [Victor Fernandez de Alba](mailto:sneridagh@gmail.com)
+MIT © [kitconcept GmbH](mailto:info@kitconcept.com)
