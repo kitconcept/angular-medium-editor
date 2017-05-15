@@ -1,13 +1,13 @@
-![kitconcept GmbH](https://kitconcept.com/logo.png)
+[![kitconcept GmbH](https://kitconcept.com/logo.png)](https://kitconcept.com)
 
-# angular-medium-editor-component
+# angular-medium-editor
 
 ## Installation
 
 To install this library, run:
 
 ```bash
-$ npm install angular-medium-editor-component --save
+$ npm install angular-medium-editor --save
 ```
 
 ## Consuming your library
@@ -15,7 +15,7 @@ $ npm install angular-medium-editor-component --save
 Once you have published your library to npm, you can import your library in any Angular application by running:
 
 ```bash
-$ npm install angular-medium-editor-component
+$ npm install angular-medium-editor
 ```
 
 and then from your Angular `AppModule`:
@@ -27,7 +27,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { MediumEditorModule } from 'angular-medium-editor-component';
+import { MediumEditorModule } from 'angular-medium-editor';
 
 @NgModule({
   declarations: [
