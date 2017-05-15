@@ -12,9 +12,8 @@ import { NgControl } from '@angular/forms';
 import * as MediumEditor from 'medium-editor';
 
 /**
- * MediumEditor component
  * Usage :
- * <medium-editor ngModel name="content" class="editable" #content="ngModel"></medium-editor>
+ * <medium-editor ngModel name="content" class="editable" #content="ngModel" [config]="getConfig()"></medium-editor>
  */
 @Component({
     selector: 'medium-editor',
@@ -34,10 +33,6 @@ export class MediumEditorComponent {
     ngControl;
     elementRef;
 
-
-    /**
-     * Constructor
-     */
     constructor(elementRef: ElementRef, ngControl: NgControl) {
       if ( ngControl ) {
           ngControl.valueAccessor = this;
@@ -46,30 +41,19 @@ export class MediumEditorComponent {
       this.elementRef = elementRef;
     }
 
-    /**
-     * On component destroy
-     */
     ngOnDestroy() {
         if ( this.editor ) {
-            // this.instance.removeAllListeners();
             this.editor.destroy();
             this.editor = null;
         }
     }
 
-    /**
-     * On component view init
-     */
     ngAfterViewInit() {
-        // Configuration
         let config = {};
         config = this.config || {};
         this.editorInit( config );
     };
 
-    /**
-     * Editor init
-     */
     editorInit( config ) {
       this.editor = new MediumEditor(this.host.nativeElement, config);
 
@@ -84,9 +68,6 @@ export class MediumEditorComponent {
       });
     }
 
-    /**
-     * Hack to update model
-     */
     hackUpdate() {
         if ( this.editor ) {
             let value = this.value;
@@ -95,9 +76,6 @@ export class MediumEditorComponent {
         }
     }
 
-    /**
-     * Implements ControlValueAccessor
-     */
     writeValue(value) {
         this.value = value;
 

@@ -45,16 +45,17 @@ import { MediumEditorModule } from 'angular-medium-editor';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once your library is imported, you can use the component like:
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
 <h1>
   {{title}}
 </h1>
- <medium-editor ngModel name="content" class="editable" #content="ngModel"></medium-editor>
+ <medium-editor ngModel name="content" class="editable" #content="ngModel" [config]="getConfig()"></medium-editor>
 
 ```
+You can configure the Medium Editor from the component with the `[config]`.
 
 ## Development
 
