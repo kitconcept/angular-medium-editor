@@ -24,8 +24,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "angular-medium-editor-component.js",
-    "flatModuleId": "angular-medium-editor-component"
+    "flatModuleOutFile": "angular-medium-editor.js",
+    "flatModuleId": "angular-medium-editor"
   },
   "files": [
     "./index.ts"

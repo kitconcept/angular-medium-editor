@@ -116,7 +116,7 @@ gulp.task('rollup:umd', function () {
       // The name to use for the module for UMD/IIFE bundles
       // (required for bundles with exports)
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#modulename
-      moduleName: 'angular-medium-editor-component',
+      moduleName: 'angular-medium-editor',
 
       // See https://github.com/rollup/rollup/wiki/JavaScript-API#globals
       globals: {
@@ -124,7 +124,7 @@ gulp.task('rollup:umd', function () {
       }
 
     }))
-    .pipe(rename('angular-medium-editor-component.umd.js'))
+    .pipe(rename('angular-medium-editor.umd.js'))
     .pipe(gulp.dest(distFolder));
 });
 
