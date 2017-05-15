@@ -25,7 +25,7 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "angular-medium-editor.js",
-    "flatModuleId": "angular-medium-editor"
+    "flatModuleId": "@kitconcept/angular-medium-editor"
   },
   "files": [
     "./index.ts"
